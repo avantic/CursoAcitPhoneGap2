@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>PhoneGap</title>
+		<link rel="stylesheet" href="libs/jquery/jquery.mobile-1.0rc2.min.css" />
+		<script type="text/javascript" charset="utf-8" src="libs/jquery/jquery-1.6.4.min.js"></script>
+			
+		<script type="text/javascript" charset="utf-8" src="libs/phonegap-1.2.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="index.js"></script>
+		<script type="text/javascript" charset="utf-8" src="photo.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" charset="utf-8" src="geolocation.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="libs/jquery/jquery.mobile-1.0rc2.min.js"></script>
+		
+	</head>
+	<body onload="onLoad()">
+		<div id="pageIndex" data-role="page">
+			<div data-role="header">
+				<h1>¡Hola PhoneGap!</h1>
+			</div>
+			
+			<div data-role="content">
+				<div class="ui-bar-e">
+		  			<b>Información del dispositivo</b>
+		  		</div>
+				<div data-role="collapsible" data-theme="a" data-content-theme="e">
+					<h3>S.O.</h3> <span id="platform"> &nbsp;</span>, Version: <span id="version">&nbsp;</span>
+				</div>
+				<div data-role="collapsible" data-theme="a" data-content-theme="e">
+					<h3>Terminal</h3> UUID: <span id="uuid"> &nbsp;</span>, Name: <span id="name">&nbsp;</span>
+				</div>
+				<div data-role="collapsible" data-theme="a" data-content-theme="e">
+					<h3>Pantalla</h3> Width: <span id="width"> &nbsp;</span>, Height: <span id="height">&nbsp; </span>, Color Depth: <span id="colorDepth"></span>
+				</div>
+			</div>
+			
+			<a href="photo.html" data-rel="dialog" data-role="button" data-theme="e">Capturar foto</a>
+			
+			<a href="geolocation.html" data-role="button" data-theme="e">Geolocalización</a>
+			
+			<div data-role="footer" data-position="fixed">
+				<h4>Pie de página</h4>
+			</div>
+		</div>
+	</body>
+</html>
